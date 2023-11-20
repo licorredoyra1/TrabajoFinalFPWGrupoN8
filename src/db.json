@@ -1,0 +1,38 @@
+[
+        {
+            "id":1,
+            "name": "Genaro Trevisiol Montiel",
+            "image": "../public/img/ulises.jpg",
+            "description": "Encargado de: Portal para TP Final y Trabajo de React 3: Comparador de Precios",
+            "git":"https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.web"
+        },
+        {
+            "id":2,
+            "name": "Lisandro Corredoyra",
+            "image": "https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.webp",
+            "description": "Encargado de: Trabajo de Phaser 2: Juego de Naves.",
+            "git":"https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.web"
+        },
+        {
+            "id":3,
+            "name": "Ulises Alfonso",
+            "image": "https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.webp",
+            "description": "Encargado de: Trabajo de Phaser 1: Juego 'dude'",
+            "git":"https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.web"
+        },
+        {
+            "id":4,
+            "name": "Micaela Coca",
+            "image": "https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.webp",
+            "description": "Encargada de: Trabajo de React 1: Lista de Tareas",
+            "git":"https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.web"
+        },
+        {
+            "id":5,
+            "name": "Jorgelina Chañi",
+            "image": "https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.webp",
+            "description": "Encargada de: Trabajo de React 2: Juego para niños.",
+            "git":"https://assets.elgourmet.com/wp-content/uploads/2011/09/shutterstock_1366373012-1024x683.jpg.web"
+        }
+
+    ]

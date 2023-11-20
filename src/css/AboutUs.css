@@ -1,0 +1,12 @@
+.fotoPerfil{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 350px;
+    height: 300px;
+}
+
+.desarrolladores_titulo{
+    font-size: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.918);
+}
