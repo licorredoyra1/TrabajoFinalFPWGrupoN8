@@ -18,7 +18,7 @@ class menu extends Phaser.Scene{
     this.add.image(400,200, "titulo");
 
     this.startButton.on('pointerdown',() => {
-        this.scene.start("Scene_play");
+        this.scene.start("Scene_playNave");
     });
 
     }

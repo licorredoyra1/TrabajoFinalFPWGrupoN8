@@ -1,6 +1,6 @@
-class Scene_play extends Phaser.Scene{
+class Scene_playNave extends Phaser.Scene{
   constructor() {
-    super("Scene_play"); 
+    super("Scene_playNave"); 
     this.playerLife = 3;
     this.score = 0; 
     this.bonusActive = false;
@@ -215,7 +215,7 @@ class Scene_play extends Phaser.Scene{
     }
 
     if(this.score >= 200){
-      this.scene.start("Scene_play2", { playerLife: this.playerLife, score: this.score }); //pasa la vida actual del jugador como un parametro
+      this.scene.start("Scene_playNave2", { playerLife: this.playerLife, score: this.score }); //pasa la vida actual del jugador como un parametro
       this.score = 0;
     }
   }
@@ -299,4 +299,4 @@ reduceBonusBar() {
   }
 
 }
-export default Scene_play;
+export default Scene_playNave;
