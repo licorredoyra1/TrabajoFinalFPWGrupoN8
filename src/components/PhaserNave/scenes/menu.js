@@ -15,7 +15,7 @@ class menu extends Phaser.Scene{
 
     create(){
     this.add.image(400,300, "menuBg");
-    this.startButton = this.physics.add.image(400,420, "menuPlay").setInteractive();
+    this.startButton = this.physics.add.sprite(400,420, "menuPlay").setInteractive();
     this.add.image(400,200, "titulo");
 
     this.startButton.on('pointerdown',() => {

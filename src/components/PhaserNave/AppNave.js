@@ -41,7 +41,7 @@ function AppNave() {
   }, []); // El segundo argumento de useEffect debe ser un array vacío si solo quieres que se ejecute una vez
 
   // Aquí puedes devolver cualquier contenido JSX que desees renderizar
-  return <div>Contenido de tu componente</div>;
+  return BootloaderNave;
 }
 
 export default AppNave;
