@@ -130,10 +130,15 @@ class Scene_playNave extends Phaser.Scene{
     if (this.cursors.left.isDown) 
     {
       this.player.setVelocityX(-200);
-      this.player.anims.play('left', true);
+      if (this.anims.exists('left')) {
+        this.player.anims.play('left', true);
+      }
+    
     } else if(this.cursors.right.isDown) {
       this.player.setVelocityX(200);
-      this.player.anims.play('right', true);
+      if (this.anims.exists('right')) {
+        this.player.anims.play('right', true);
+      }
     } else if (this.cursors.up.isDown) {
       this.player.setVelocityY(-200);
       this.player.anims.play('down',true);

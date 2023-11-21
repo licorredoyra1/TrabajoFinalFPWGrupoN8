@@ -105,7 +105,7 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual, se
       <h1 className="title1">What animal is this?</h1>
       <p className="title2">Round: {rondaActual}</p>
       <div className="text-center">
-        <img src={`..../assets/animales/${animalObjetivo}.jpg`} alt={animalObjetivo} className="image"  />
+        <img src={`assets/animales/${animalObjetivo}.jpg`} alt={animalObjetivo} className="image"  />
       </div>
 
       <div className=" botonJuego">

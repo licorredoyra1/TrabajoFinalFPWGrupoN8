@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Phaser from "phaser";
 import BootloaderNave from "./BootloaderNave";
 import Scene_playNave from "./scenes/Scene_playNave";
@@ -8,8 +8,6 @@ import megaWin from "./scenes/megaWin";
 import menu from "./scenes/menu";
 
 function AppNave() {
-  const [listo, setListo] = useState(false);
-
   useEffect(() => {
     const config = {
       scene: [BootloaderNave, megaWin, gameOver, menu, Scene_playNave, Scene_playNave2],
@@ -35,14 +33,9 @@ function AppNave() {
       },
     };
 
-    let game = new Phaser.Game(config);
-
-    game.events.on("LISTO", () => {
-      setListo(true);
-    });
+    const game = new Phaser.Game(config);
 
     return () => {
-      setListo(false);
       game.destroy(true);
     };
   }, []); // El segundo argumento de useEffect debe ser un array vacío si solo quieres que se ejecute una vez
