@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
 body{
     margin: 0;
@@ -8,12 +7,9 @@ body{
   opacity: 5;
   background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
   background-attachment: fixed;
-  font-family: 'Roboto', sans-serif,'Black 900';
+  font-family: 'Gabarito', sans-serif;
 }
 
-.titulo{
-  font-style: italic;
-}
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -22,13 +18,6 @@ body{
     min-height: 100vh; /* Establece una altura mínima del 100% de la ventana */
     height: auto; 
   }
-  .col {
-    border: 1px solid #cccccc6d;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f9f9f967;
-    border-radius: 10px;
-}
   
   ul {
     align-self: flex-start; /* Alinea los elementos de la lista a la izquierda */
@@ -36,9 +25,8 @@ body{
   
   
 .labelEstilo {
-    color: rgba(125, 121, 121, 0.741); /* Cambia el color del texto si lo deseas */
-    font-family: 'Roboto', sans-serif, 'Medium 500 Italic';
-}
+    color: white; /* Cambia el color del texto si lo deseas */
+  }
 
   /*Input*/
   .InputContainer {
@@ -176,7 +164,7 @@ body{
     justify-content: space-between;
     width: 100%;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0); /* Color de fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
     padding: 10px; /* Espacio alrededor del contenido de la nota */
     border-radius: 8px; /* Bordes redondeados para dar estilo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la nota */

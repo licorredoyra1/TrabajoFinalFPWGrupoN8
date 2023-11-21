@@ -7,7 +7,7 @@ import AboutUs from './components/AboutUs';
 import AppNiños from './components/ReactJuegoNiños/AppNiños';
 import AppNave from './components/PhaserNave/AppNave';
 import AppPhaser from './components/PhaserDude/AppPhaser'
-// import AppNotas from './components/ReactListaNotas/AppNotas'
+import AppNotas from './components/ReactNotas/AppNotas';
 // import AppComparador './components/PhaserComparadorPrecios/AppComparador'
 
 
@@ -41,7 +41,7 @@ function App() {
         <Route path="/niños" element={<AppNiños/>}></Route>
         <Route path="/nave" element={<AppNave/>}></Route>
         <Route path="/dude" element={<AppPhaser/>}></Route>
-        {/* <Route path="/notas" element={<AppNotas/>}></Route> */}
+        <Route path="/notas" element={<AppNotas/>}></Route> 
         {/* <Route path="/comparador" element={<AppComparador/>}></Route> */}
       </Routes>
     </Router>
