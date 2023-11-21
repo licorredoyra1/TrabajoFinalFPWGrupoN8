@@ -4,7 +4,7 @@ class Scene_play2 extends Phaser.Scene {
   constructor() {
     super("Scene_play2");
     this.score = 0;
-    this.scoreText;
+    this.scoreText= "";
   }
 
   preload() {

@@ -3,9 +3,9 @@ class Scene_play3 extends Phaser.Scene {
     constructor() {
       super("Scene_play3");
       this.vidas = 100;
-      this.scoreText;
-      this.starLivesText
-      this.timer;
+      this.scoreText = "";
+      this.starLivesText= "";
+      this.timer = 0;
       this.initialTime = 30;
       this.bombHit = false; // Variable para controlar si una bomba ya golpeó al jugador
       this.starLives = 6;

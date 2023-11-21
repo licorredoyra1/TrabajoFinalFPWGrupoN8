@@ -1,3 +1,4 @@
+import Phaser from "phaser";
 
 class gameOver extends Phaser.Scene{
 

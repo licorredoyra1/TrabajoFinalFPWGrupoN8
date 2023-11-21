@@ -1,3 +1,5 @@
+import Phaser from "phaser";
+
 class Scene_playNave2 extends Phaser.Scene{
 
   constructor() {

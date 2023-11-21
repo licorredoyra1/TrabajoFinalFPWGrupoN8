@@ -1,5 +1,12 @@
-import phaser from "phaser";
+import Phaser from "phaser";
 import { useState, useEffect } from "react";
+import Game_over from './scenes/Game_over';
+import Menu from "./scenes/Menu";
+import Scene_play from "./scenes/Scene_play";
+import Scene_play2 from "./scenes/Scene_play2";
+import Scene_play3 from "./scenes/Scene_play3";
+import Winner from "./scenes/Winner";
+import Bootloader from "./Bootloader";
 
 function AppPhaser(){
     const[listo, setListo] = useState(false);

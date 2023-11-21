@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playpen+Sans&display=swap');
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fadd80;
+}
+
+.conteinerNombreJugador{
+  background-color: #f8c162;
+  width: 100%;
+}
+
+.nombreJugador {
+  font-family: 'Playpen Sans', cursive;
+  width: 100%;
+  font-size: 50px;
+  color: #fadd80;
+  margin: 0%;
+  text-align: center;
+}
+
+.title1 {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 10px;
+  color: #f79558;
+}
+
+.title2 {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+  color: #f79558;
+  border: 2px solid #f79558;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.image {
+  width: 200px;
+  border: 5px solid #f8c162;
+  border-radius: 5px;
+}
+
+.botonJuego {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteinerOpciones{
+  margin: 10px;
+  padding: 10px;
+}
+
+.botonOpcion {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-top: 20px;
+  background-color: #f68d6a;
+  color: #fadd80;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botonOpcion:hover {
+  transform: scale(1.1);
+}
+
+.conteinerOpciones {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.conteinerBonus {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.botonOpcion:disabled {
+  background-color: #ccc;
+  color: #a7a7a7;
+  cursor: not-allowed;
+}
+
+.success-message {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 20px;
+  width: 40%;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid #9fd657;
+  border-radius: 10px;
+  color: #9fd657;
+}
+
+.error-message {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid #f68d6a;
+  border-radius: 10px;
+  color: #da724f;
+}
+
+.next-button {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 25px;
+  padding: 15px 50px;
+  background-color: #bbefff;
+  color: #58caec;
+  border: none;
+  border-radius: 10px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  transform: scale(1.1);
+}
+
+.bonus-button {
+  font-family: 'Playpen Sans', cursive;
+  margin: 17px;
+  margin-top: 60px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #d9f565;
+  color: #90b400;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bonus-button:hover {
+  transform: scale(1.1);
+}

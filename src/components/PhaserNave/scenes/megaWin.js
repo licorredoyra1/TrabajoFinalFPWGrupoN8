@@ -1,3 +1,5 @@
+import Phaser from "phaser";
+
 class megaWin extends Phaser.Scene{
 
 
