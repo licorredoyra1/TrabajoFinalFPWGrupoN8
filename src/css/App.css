@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playpen+Sans&family=Turret+Road:wght@500&display=swap');   
+
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ced4da;
+}
+
+.conteeiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.componente {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #50717b;
+    font-size: 1.2rem;
+    font-family: 'Turret Road', sans-serif;
+    margin: 0px 20px;
+}
+
+.componente:hover {
+    color: #96a7b6;
+}
+
+#dropdown {
+    font-size: 1rem;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #436069;
+    font-family: 'Turret Road', sans-serif;
+}
+
+#dropdown:hover {
+    color: #96a7b6;
+}
+
+.dropdown-item{
+    font-family: 'Turret Road', sans-serif;
+}

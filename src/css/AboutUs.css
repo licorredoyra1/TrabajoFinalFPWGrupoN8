@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playpen+Sans&family=Turret+Road:wght@500&display=swap');   
+
+
 .fotoPerfil{
     border-radius: 50%;
     object-fit: cover;
     width: 350px;
     height: 300px;
+    font-family: 'Turret Road', sans-serif;
 }
 
 .desarrolladores_titulo{
+    font-family: 'Turret Road', sans-serif;
     font-size: 50px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.918);
+    background-color: #50717b;
 }

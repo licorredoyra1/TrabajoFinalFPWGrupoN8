@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import data from "../dataReact/imagenes.json";
-//import '../reactComponets/style/StyleJuego.css'
+import './style/StyleJuego.css'
 
 function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual, setRondaActual, setPuntaje2, nombreJugador2, puntaje2, setTurno, turno, rondasTotales, }) {
   const [animalObjetivo, setAnimalObjetivo] = useState("");
@@ -98,7 +98,7 @@ function Juego({ nombreJugador, puntaje, setPuntaje, alTerminar, rondaActual, se
   }
 
   return (
-    <div className="conteiner ">
+    <div className="conteinerr">
       <div className="conteinerNombreJugador" >
       <h2 className="nombreJugador">{jugador}</h2>
       </div>

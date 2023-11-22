@@ -1,8 +1,8 @@
-//import '../reactComponets/css/StyleFelicitaciones.css'
+import './style/StyleFelicitaciones.css'
 
 function Felicitaciones({ nombreJugador, puntaje, nombreJugador2, puntaje2, resultado }) {
     return (
-        <div className="conteiner">
+        <div className="conteinerr">
             <div className='conteinerPlayers'>
                 <div className='conteinerP1'>
                     <h1 className="titles">Congratulations, {nombreJugador}!</h1>

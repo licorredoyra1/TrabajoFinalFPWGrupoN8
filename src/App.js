@@ -1,5 +1,7 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './css/App.css';
+import logo from './img/Logo-PF.png'
 import Inicio from './components/Inicio';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Error from './components/Error';
@@ -19,17 +21,19 @@ function App() {
 
   return (
     <Router>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="/">Navbar</Navbar.Brand>
+      <Navbar className='navbar'>
+        <Container className='conteeiner'>
+          <Navbar.Brand><img src={logo} alt="Logo" className="logo"/></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/i">Home</Nav.Link>
-            <Nav.Link href="/aboutUs">Acerca de Nosotros</Nav.Link>
-            <Nav.Link href="/niños">Juego para Niños</Nav.Link>
-            <Nav.Link href="/nave">Juego Nave</Nav.Link>
-            <Nav.Link href="/dude">Juego Dude</Nav.Link>
-            <Nav.Link href="/notas">Lista de Notas</Nav.Link>
-            <Nav.Link href="/comparador">Comparador de precios</Nav.Link>
+            <Nav.Link href="/i"><h2 className='componente'>Home</h2></Nav.Link>
+            <Nav.Link href="/aboutUs"><h2 className='componente'>Acerca de Nosotros</h2></Nav.Link>
+            <NavDropdown title="Proyectos" id="dropdown">
+              <NavDropdown.Item className='dropdown-item' href="/nave">Juego Nave</NavDropdown.Item>
+              <NavDropdown.Item className='dropdown-item' href="/dude">Juego Dude</NavDropdown.Item>
+              <NavDropdown.Item className='dropdown-item' href="/niños">Juego para Niños</NavDropdown.Item>
+              <NavDropdown.Item className='dropdown-item' href="/comparador">Comparador de precios</NavDropdown.Item>
+              <NavDropdown.Item className='dropdown-item' href="/notas">Lista de Notas</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
 
         </Container>
