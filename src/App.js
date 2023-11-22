@@ -8,7 +8,7 @@ import AppNiños from './components/ReactJuegoNiños/AppNiños';
 import AppNave from './components/PhaserNave/AppNave';
 import AppPhaser from './components/PhaserDude/AppPhaser'
 import AppNotas from './components/ReactNotas/AppNotas';
-// import AppComparador './components/PhaserComparadorPrecios/AppComparador'
+import AppComparador from './components/ReactPrecios/AppComparador';
 
 
 
@@ -42,7 +42,7 @@ function App() {
         <Route path="/nave" element={<AppNave/>}></Route>
         <Route path="/dude" element={<AppPhaser/>}></Route>
         <Route path="/notas" element={<AppNotas/>}></Route> 
-        {/* <Route path="/comparador" element={<AppComparador/>}></Route> */}
+        <Route path="/comparador" element={<AppComparador/>}></Route>
       </Routes>
     </Router>
   );
