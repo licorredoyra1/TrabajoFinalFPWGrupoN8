@@ -31,6 +31,11 @@ import phaser from "phaser";
          this.load.image('megaWin', 'assets/nave/megaWin.png');
          this.load.image('bonus', 'assets/nave/bonus.png'); // Imagen del bonus
          this.load.image('home', 'assets/nave/home.png'); // Imagen del home
+         this.load.audio('win', 'assets/nave/win.mp3');
+         this.load.audio('gameOver', 'assets/nave/gameOver.mp3');
+         this.load.audio('sound', 'assets/nave/sound.mp3');
+
+
          
     }
 

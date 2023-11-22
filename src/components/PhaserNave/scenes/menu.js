@@ -14,6 +14,16 @@ class menu extends Phaser.Scene{
     }
 
     create(){
+        this.sound.stopAll('win');
+        this.sound.stopAll('gameOver');
+        this.sound.stopAll('sound');
+        this.sonido = this.sound.add('sound');
+        const soundConfig = {
+            volume: 1,
+            loop: true
+        }
+        
+        this.sonido.play(soundConfig);
     this.add.image(400,300, "menuBg");
     this.startButton = this.physics.add.sprite(400,420, "menuPlay").setInteractive();
     this.add.image(400,200, "titulo");

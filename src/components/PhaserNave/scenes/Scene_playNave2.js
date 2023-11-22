@@ -12,6 +12,18 @@ class Scene_playNave2 extends Phaser.Scene{
   
   }
   create(data){
+
+    this.sound.stopAll('win');
+    this.sound.stopAll('gameOver');
+    this.sound.stopAll('sound');
+    this.sonido = this.sound.add('sound');
+    const soundConfig = {
+        volume: 1,
+        loop: true
+    }
+    
+    this.sonido.play(soundConfig);
+    
    this.bossLife = 20;
 
   //obtiene la vida del jugador de la escena naterior  
