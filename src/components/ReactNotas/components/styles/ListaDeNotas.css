@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    font-family: 'Gabarito', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Establece una altura mínima del 100% de la ventana */
+    height: auto; 
+    background-image: url('https://images.unsplash.com/photo-1618367588411-d9a90fefa881?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Ruta de la imagen de fondo */
+    opacity: 5;
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana del navegador */
+    background-attachment: fixed;
+  }
+  
+.ul {
+    align-self: flex-start; /* Alinea los elementos de la lista a la izquierda */
+  }
+  
+  
+.labelEstilo {
+    color: white; /* Cambia el color del texto si lo deseas */
+  }
+
+  /*Input*/
+  .InputContainer {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+  
+   /*Boton*/
+  .boton {
+    position: relative;
+    margin: 17px 0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff7f50;
+    transition: all 0.2s ease;
+  }
+  
+  .boton:active {
+    transform: scale(0.95);
+  }
+  
+  .boton:before,
+  .boton:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  .boton:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #ff7f50 20%, transparent 30%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ff7f50 15%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: orangeTopBubbles 0.6s ease;
+  }
+  
+  @keyframes orangeTopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .boton:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #ff7f50 15%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%),
+      radial-gradient(circle, #ff7f50 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: orangeBottomBubbles 0.6s ease;
+  }
+  
+  @keyframes orangeBottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+  /*notas, borrado*/
+  .nota{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .nota li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
+    padding: 10px; /* Espacio alrededor del contenido de la nota */
+    border-radius: 8px; /* Bordes redondeados para dar estilo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la nota */
+  }
+
+  .nota .button {
+    margin-left: 20px; /* Margen a la izquierda del botón */
+  }
+/*----------BOTON DE BORRADO-------------*/
+.button {
+    position: relative;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    transition: all 0.2s ease;
+  }
+  
+  .button:active {
+    transform: scale(0.96);
+  }
+  
+  .button:before,
+  .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  .button:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  .button:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }

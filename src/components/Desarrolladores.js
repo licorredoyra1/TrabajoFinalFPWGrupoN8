@@ -20,11 +20,6 @@ function Desarrolladores({datos}){
                     <div className="text-center">
                         <Container as={Link} to={datos.git} target="_blank" className="fs-1 text-dark text-center mt-3"><FontAwesomeIcon icon={faGithub} /></Container>
                         </div>
-                        
-
-
-                    
-
                 </Col>
             </Row>
             <hr className='mb-5'></hr>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fee98c;
+}
+.conteinerTitulo{
+  background-color: #b1d8f8;
+  width: 100%;
+}
+
+.tituloJuego{
+  font-family: 'Playpen Sans', cursive;
+  font-size: 70px;
+  margin: 10px;
+  color: #fee98c;
+}
+.conteinerJugador {
+  margin: 20px;
+}
+
+.title {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #f79558;
+}
+
+input {
+  width: 90%;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border: 3px solid #fed477;
+  border-radius: 10px;
+}
+
+.inputJugador::placeholder {
+  font-family: 'Playpen Sans', cursive;
+  color: rgb(204, 202, 202);
+}
+
+.button {
+  font-family: 'Playpen Sans', cursive;
+  font-size: 30px;
+  padding: 15px 50px;
+  margin-top: 50px;
+  background-color: #b1d8f8;
+  color: #fee98c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
