@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Juego from "./Juego";
 import Felicitaciones from "./Felicitaciones";
-//import '../reactComponets/style/StyleInicio.css'
+import './style/StyleInicio.css'
 
 function Inicio() {
   const [nombreJugador, setNombreJugador] = useState("");
@@ -64,7 +64,7 @@ function Inicio() {
 
   if (!mostrarJuego && !mostrarFelicitaciones) {
     return (
-      <div className="container">
+      <div className="containerr">
         <div className="conteinerTitulo">
         <h1 className="tituloJuego">Guess the animal</h1>
         </div>
@@ -89,7 +89,7 @@ function Inicio() {
 
 
         <div className="mt-5 fs-5">
-          <button className="button"
+          <button className="buttoon"
             onClick={() => manejarClickJugar(nombreJugador, nombreJugador2)}
           >
             Play

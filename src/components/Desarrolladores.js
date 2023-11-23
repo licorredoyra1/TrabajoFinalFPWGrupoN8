@@ -2,6 +2,7 @@ import React from "react";
 import { Col,Row,Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import '../css/Desarrolladores.css'
 
 
 import { Link } from 'react-router-dom';

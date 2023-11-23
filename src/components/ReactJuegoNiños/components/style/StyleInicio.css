@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-.container {
+.containerr {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +8,19 @@
   height: 100vh;
   background-color: #fee98c;
 }
-.conteinerTitulo{
+
+.conteinerTitulo {
   background-color: #b1d8f8;
   width: 100%;
 }
 
-.tituloJuego{
+.tituloJuego {
   font-family: 'Playpen Sans', cursive;
   font-size: 70px;
   margin: 10px;
   color: #fee98c;
 }
+
 .conteinerJugador {
   margin: 20px;
 }
@@ -47,7 +49,7 @@ input {
   color: rgb(204, 202, 202);
 }
 
-.button {
+.buttoon {
   font-family: 'Playpen Sans', cursive;
   font-size: 30px;
   padding: 15px 50px;
@@ -59,6 +61,6 @@ input {
   cursor: pointer;
 }
 
-.button:hover {
+.buttoon:hover {
   transform: scale(1.1);
 }
